@@ -13,7 +13,7 @@ public class Location {
         double[] outRay = {1, 1, 0};
         double max = array[0][0];
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
+            for (int j = 0; j < array[i].length; j++) {
                 if (array[i][j] > max) {
                     max = array[i][j];
                     outRay[0] = i;
